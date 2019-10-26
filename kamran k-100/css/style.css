@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.slider{
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+}
+.slider ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    transition: .3s linear;
+
+}
+/* .slider ul li{
+    width: 800px;
+} */
+.slider ul li img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+.slider #next, .slider #prew{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor:pointer;
+    color: aliceblue;
+}
+.slider #next{
+    right: 15px;
+}
+.slider #prew{
+    left: 15px;
+}
